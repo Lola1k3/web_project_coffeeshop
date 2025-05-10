@@ -31,23 +31,24 @@
           />
           <ul class="nav__links">
             <li><a href="#recipes" class="nav__link">Receitas</a></li>
-            <li><a href="#" class="nav__link">Receitas</a></li>
-            <li><a href="#" class="nav__link">Reservar uma mesa</a></li>
+            <li>
+              <a href="#reservation" class="nav__link">Reservar uma mesa</a>
+            </li>
             <li><a href="#" class="nav__link">Contatos</a></li>
           </ul>
         </nav>
-        <p class="header__content">
-         <h1 class="header__title">
-           <span class="span-accent">Café especial</span>
-           <br />
-           na biblioteca Triple Peaks
-         </h1>
-         <p class="header__decription">
-           Esta é nossa zona de estudo! Temos aquele cafezinho para energizar
-           <br />
-           você e vibrações aconchegantes para soltar a criatividade.
-         </p>
+
+        <h1 class="header__title">
+          <span class="header__accent">Café especial</span>
+          <br />
+          na biblioteca Triple Peaks
+        </h1>
+        <p class="header__description">
+          Esta é nossa zona de estudo! Temos aquele cafezinho para energizar
+          <br />
+          você e vibrações aconchegantes para soltar a criatividade.
         </p>
+
         <img
           src="./images/inside_coffee_shop.png"
           alt="ilustração de uma caféteria"
@@ -106,7 +107,78 @@
             </li>
           </ul>
         </section>
-        <section class="reservation"></section>
+
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar uma mesa</h2>
+          <form class="form reservation__form">
+            <fieldset class="form__fieldset">
+              <label for="nome" class="form__label">Nome *</label>
+              <input
+                class="form__input"
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Nome"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="number"
+                >Número de convidados *</label
+              >
+              <input
+                class="form__input"
+                type="number"
+                name="number"
+                id="number"
+                min="1"
+                max="8"
+                placeholder="1-8"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="datahora">Data e hora</label>
+              <input
+                class="form__input"
+                type="datetime-local"
+                name="datahora"
+                id="datahora"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="email">Seu e-mail *</label>
+              <input
+                class="form__input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email@email.com"
+                required
+              />
+            </fieldset>
+
+            <button class="form__button" type="submit">
+              Reservar uma mesa
+            </button>
+
+            <label class="form__checkbox-label">
+              <input
+                type="checkbox"
+                id="concordo"
+                class="form__checkbox"
+                required
+              />
+              <span class="form__checkbox-text">
+                Eu concordo com os termos de uso
+              </span>
+            </label>
+          </form>
+        </section>
       </main>
       <footer class="footer">
         <!-- conteúdo do footer-->
