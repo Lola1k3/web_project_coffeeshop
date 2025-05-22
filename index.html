@@ -10,7 +10,7 @@
       content="receitas de café, tutoriais, caféteria, ambiente familiar, tempode qualidade."
     />
     <title>O melhor café</title>
-    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <!-- corrigir -->
     <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,7 +34,7 @@
             <li>
               <a href="#reservation" class="nav__link">Reservar uma mesa</a>
             </li>
-            <li><a href="#" class="nav__link">Contatos</a></li>
+            <li><a href="#contatos" class="nav__link">Contatos</a></li>
           </ul>
         </nav>
 
@@ -180,8 +180,43 @@
           </form>
         </section>
       </main>
-      <footer class="footer">
-        <!-- conteúdo do footer-->
+
+      <footer class="footer" id="contatos">
+        <div class="footer__circle"></div>
+        <div class="footer__content">
+          <img
+            src="images/logo_coffeeshop_light.svg"
+            alt="logo da Triple Espresso"
+            class="footer__logo"
+          />
+          <div class="footer__social">
+            <p class="footer__social-heading">Redes Sociais</p>
+            <ul class="footer__list">
+              <li>
+                <a href="#" class="footer__link" target="_blank">
+                  <img
+                    src="images/facebook_white.svg"
+                    alt="facebook"
+                    class="footer__social-icon"
+                  />
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link" target="_blank">
+                  <img
+                    src="images/instagram_white.svg"
+                    alt="Instagram"
+                    class="footer__social-icon"
+                  />
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="footer__copyright">© 2025 Lorraine de B. Nunes Borges</p>
       </footer>
     </div>
   </body>
